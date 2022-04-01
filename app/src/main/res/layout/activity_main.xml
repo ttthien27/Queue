@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/userWelcomeCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="24dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/welcomeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Queue"
+                android:textAppearance="@style/TextAppearance.Reply.Headline5" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/usernameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Trần Đức Chính"
+                android:textAppearance="@style/TextAppearance.Reply.Headline6" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userWelcomeCardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/plane_16"
+        android:text="Đăng xuất" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/lineBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hostBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Xếp hàng" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/hostBtn"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="180dp"
+        android:text="Tạo hàng đợi" />
+
+</RelativeLayout>

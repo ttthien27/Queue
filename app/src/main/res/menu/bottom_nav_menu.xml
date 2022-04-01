@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/roomKey"
+            android:icon="@drawable/outline_vpn_key_24"
+            android:title="Khóa"
+            android:enabled="true" />
+        <item
+            android:id="@+id/roomWait"
+            android:icon="@drawable/outline_family_restroom_24"
+            android:title="Phòng chờ"
+            android:enabled="true"/>
+        <item
+            android:id="@+id/roomSetting"
+            android:icon="@drawable/outline_settings_24"
+            android:title="Thiết lập"
+            android:enabled="true"/>
+
+</menu>

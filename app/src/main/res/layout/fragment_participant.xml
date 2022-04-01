@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/waiterNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_weight="0.15"
+        android:textAppearance="@style/TextAppearance.Reply.Body2" />
+
+    <TextView
+        android:id="@+id/waiterName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_weight="0.5"
+        android:textAppearance="@style/TextAppearance.Reply.Body2" />
+
+    <TextView
+        android:id="@+id/waiterPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_weight="0.4"
+        android:textAppearance="@style/TextAppearance.Reply.Body2" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="24dp">
+
+        <TextView
+            android:id="@+id/waiterState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Chờ"
+            android:textAppearance="@style/TextAppearance.Reply.Caption"
+            android:textColor="@color/reply_orange_500" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
